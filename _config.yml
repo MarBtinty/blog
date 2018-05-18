@@ -8,13 +8,13 @@ subtitle: Blah Blah
 description: 我亦倾心这样的时光
 keywords: wqnmlgb0.0
 author: MarBtinty
-language:
-timezone:
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://marbtinty.github.io/ 
-root: MarBtinty.github.io
+url: https://marbtinty.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -56,6 +56,9 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+        Java: java
+        前端: front
+        随笔: other
 tag_map:
 
 # Date / Time format
@@ -79,3 +82,18 @@ deploy:
   type: git
   repository: git@github.com:MarBtinty/MarBtinty.github.io.git 
   branch: master
+  
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  model:
+    use: live2d-widget-model-shizuku
+  display:
+    position: right
+    width: 150
+    height: 300
+  mobile:
+    show: true
